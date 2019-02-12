@@ -7,28 +7,28 @@ For this story I was tasked with Changing a Javascript clock to a clock that use
 <div id="clock" class="pill-clock">&nbsp</div>
 
 <script>
- 	//Located in an external Js file
 function updateClock() {
-    $('#clock').html(moment().format('h:mm:ss a'));
+	$('#clock').html(moment().format('h:mm:ss a'));
 };
+
 //updates clock every 200 milliseconds, located in the cshtml file
-	setInterval(updateClock, 200) 
+setInterval(updateClock, 200) 
 </script>
 ```
 For this story I was tasked with Adding an approve function to the timeOffEvent. I talk to the project manager and he set some tasks for me the main one being to set the userId to approverId when Approve button is hit. The TimeOffEvent is an admin only controller, so it would set admin ID to approverID. I had to do research for the exact syntax and dug through the db to make sure I use the right table.
 ```
 public ActionResult Approve(Guid id)
 { 
-    	TimeOffEvent timeOffEvent = db.TimeOffEvents.Find(id);
-            timeOffEvent.ApproverId = new Guid(User.Identity.GetUserId());
-            db.SaveChanges();
-            return RedirectToAction("Index");
+TimeOffEvent timeOffEvent = db.TimeOffEvents.Find(id);
+	timeOffEvent.ApproverId = new Guid(User.Identity.GetUserId());
+	db.SaveChanges();
+	return RedirectToAction("Index");
 }
 ```
 This was a simple bug fix, I had to hide the password when typed.
 ```
 <div class="col-md-10">
-             @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+ @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+ @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
 </div>
 ```
