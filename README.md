@@ -25,7 +25,7 @@ TimeOffEvent timeOffEvent = db.TimeOffEvents.Find(id);
 	return RedirectToAction("Index");
 }
 ```
-This was a simple bug fix, I had to hide the password when typed.
+This was a simple bug fix, I had to hide the password when typed. Changed 'TextBoxFor' to 'PasswordFor'
 ```
 <div class="col-md-10">
  @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
