@@ -13,13 +13,15 @@ For this story I was tasked with Changing a Javascript clock to a clock that use
 <div id="clock" class="pill-clock">&nbsp</div>
 
 <script>
-function updateClock() {
-	$('#clock').html(moment().format('h:mm:ss a'));
-};
-
 //updates clock every 200 milliseconds, located in the cshtml file
 setInterval(updateClock, 200) 
 </script>
+```
+Clock.js file
+```
+function updateClock() {
+	$('#clock').html(moment().format('h:mm:ss a'));
+};
 ```
 For this story I was tasked with Adding an approve function to the timeOffEvent. I talk to the project manager and he set some tasks for me the main one being to set the userId to approverId when Approve button is hit. The TimeOffEvent is an admin only controller, so it would set admin ID to approverID. I had to do research for the exact syntax and dug through the db to make sure I use the right table.
 ```
