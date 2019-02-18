@@ -7,21 +7,25 @@ For this story I was tasked with Changing a Javascript clock to a clock that use
 
 This code enables Moment and Jquery code on this page.
 
+
 ![Html display](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_2.PNG)
 
 Code that displays the clock
 
+
 ![Update clock](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_4.PNG)
 
-Code that updates the clock so that it stays current
+the setInterval method updates the clock so that it stays current
+
 
 ![moment clock](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_6.PNG)
 
 Code that gets the time, using moment.js
 
-For this story I was tasked with Adding an approve function to the timeOffEvent. I talk to the project manager and he set some tasks for me the main one being to set the userId to approverId when Approve button is hit. The TimeOffEvent is an admin only controller, so it would set admin ID to approverID. I had to do research for the exact syntax and dug through the db to make sure I use the right table.
+For the next story I was tasked with Adding an approve function to the timeOffEvent. I talked to the project manager and he set some tasks for me the main one being to set the userId to approverId when Approve button is hit. The TimeOffEvent is an admin only controller, so it would set admin ID to approverID. I had to do research for the exact syntax and dug through the db to make sure I used the right table.
 
 ![UserId to approverId](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_5.PNG)
+
 
 This was a simple bug fix, I had to hide the password when typed. Changed 'TextBoxFor' to 'PasswordFor'
 
