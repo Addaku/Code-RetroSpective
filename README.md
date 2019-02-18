@@ -2,6 +2,7 @@
 During the past 2 weeks me and and a team worked on a sprint where we were able to work on front end stories, back end stories, and bugs.
 
 For this story I was tasked with Changing a Javascript clock to a clock that uses Moment.js. I spent a few days researching the syntax for moment.js and came across an error with a fitText which when removed the clock displayed. I then had to move the javascript to an external file. I ran into problems moving the code to the main site.js file(I believe this is because the functions in the site.js file were unamed), so I created a new file.
+![code](~/code_1.png)
 ```
 <head>
     <script src="~/Scripts/jquery-3.3.1.js"></script>
