@@ -10,17 +10,17 @@ This code enables Moment and Jquery code on this page.
 
 ![Html display](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_2.PNG)
 
-Code that displays the clock
+Code that displays the clock. Id clock connects this line of Html with the moment.js code.
 
 
 ![Update clock](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_4.PNG)
 
-the setInterval method updates the clock so that it stays current
+the setInterval method updates the clock so that it stays current. it updates every 200 miliseconds to prevent the clock from lagging.
 
 
 ![moment clock](https://github.com/Addaku/Code-RetroSpective/blob/master/Code_6.PNG)
 
-Code that gets the time, using moment.js
+Code that gets the current time using moment.js.
 
 For the next story I was tasked with Adding an approve function to the timeOffEvent. I talked to the project manager and he set some tasks for me the main one being to set the userId to approverId when Approve button is hit. The TimeOffEvent is an admin only controller, so it would set admin ID to approverID. I had to do research for the exact syntax and dug through the db to make sure I used the right table.
 
